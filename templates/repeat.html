@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>
+      {% block title %}
+      {% endblock %}
+    </title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+  </head>
+  <body>
+    <h2> <a href="{% url 'articles:list' %}">LoGo</a> </h2>
+    <div class="content">
+      {% block content %}
+      {% endblock %}
+    </div>
+  </body>
+</html>

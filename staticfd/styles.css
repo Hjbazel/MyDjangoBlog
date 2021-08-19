@@ -1,6 +1,8 @@
 body {
   background-color: #37474F;
   background-image: url('star.jpg');
+  #background-repeat: no-repeat;
+  background-attachment: fixed;
   color: #fff;
 }
 
